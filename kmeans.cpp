@@ -17,14 +17,14 @@ struct point
     int cluster = -1;
 };
 
-int main()
+int main(int argc, char* argv[])
 {
-
-    std::vector<point> init;        // vector of points
-    unsigned int t, k;              // t - number of algorithm iterations, k - amount of clusters
-    std::string filename;           // string with name of input file
-    std::cin >> t >> k >> filename; // input
-    std::ifstream file(filename);
+	unsigned int t = atoi(argv[1]);
+	unsigned int k = atoi(argv[2]);
+	std::string filename = argv[3];
+	std::ifstream file(filename);
+	
+	std::vector<point> init; //vector of points
 
     // reading coordinates of points
     while (!file.eof())
