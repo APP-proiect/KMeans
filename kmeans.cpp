@@ -5,6 +5,8 @@
 #include <vector>
 #include <fstream>
 #include <algorithm>
+#include <cmath>
+#include <memory>
 
 // representation of point;
 // x,y - coordinates on XY
